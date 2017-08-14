@@ -23,10 +23,10 @@ public class LcdPixels {
 	private byte[] positions = new byte[G15.G15_BUFFER_LEN];
 
 	static {
-		ARIAL = loadFont("/PIXEARG_.TTF", 9);
-		JACKEY = loadFont("/jackeyfont.ttf", 10);
-		FIPPS = loadFont("/Fipps-Regular.otf", 10);
-		VCR_OSD_MONO = loadFont("/VCR_OSD_MONO_1.001.ttf", 15);
+		ARIAL = loadFont("/fonts/PIXEARG_.TTF", 9);
+		JACKEY = loadFont("/fonts/jackeyfont.ttf", 10);
+		FIPPS = loadFont("/fonts/Fipps-Regular.otf", 10);
+		VCR_OSD_MONO = loadFont("/fonts/VCR_OSD_MONO_1.001.ttf", 15);
 	}
 
 	LcdPixels(G15Lcd g15) {
