@@ -9,11 +9,12 @@ public class G15Tests {
 
 		try (G15Lcd g15 = new G15Lcd()) {
 			g15.setLCDBrightness(2);
-			G15Lcd.LcdPixels lcdPixels = g15.getLcdPixels();
+			LcdPixels lcdPixels = g15.getLcdPixels();
 			lcdPixels.resetPixels();
 			lcdPixels.render();
 
-			lcdPixels.writeText("片仮名, カタカナ Test");
+			lcdPixels.writeText("Test çí", 0, 0, LcdPixels.ARIAL);
+			lcdPixels.writeText("片仮名, カタカナ", 0, 20, LcdPixels.JACKEY);
 			lcdPixels.render();
 		}
 	}
